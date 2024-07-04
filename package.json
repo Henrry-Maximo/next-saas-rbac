@@ -10,7 +10,9 @@
   "devDependencies": {
     "prettier": "^3.2.5",
     "turbo": "^2.0.6",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "@saas/eslint-config": "workspace:*",
+    "@saas/typescript-config": "workspace:*"
   },
   "engines": {
     "node": ">=18"
@@ -18,6 +20,7 @@
   "packageManager": "npm@10.2.4",
   "workspaces": [
     "apps/*",
-    "packages/*"
+    "packages/*",
+    "config/*"
   ]
 }
