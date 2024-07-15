@@ -4,9 +4,13 @@
   "private": true,
   "main": "index.ts",
   "types": "index.ts",
-  "dependencies": {
+  "devDependencies": {
     "@saas/prettier-config": "workspace:*",
     "@saas/eslint-config": "workspace:*",
     "@saas/tsconfig": "workspace:*"
-  }
+  },
+  "eslintConfig": {
+    "extends": ["@saas/eslint-config/library"]
+  },
+  "prettier": "@saas/prettier-config"
 }
