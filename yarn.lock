@@ -110,29 +110,31 @@
     eslint-plugin-react-hooks "^4.6.0"
     prettier "^3.2.5"
 
-"@saas/api@file:C:\\Users\\henrique.maximo\\Desktop\\Aulas - Nodejs\\next-saas-rbac\\apps\\api":
+"@saas/api@file:C:\\Users\\henrique.maximo\\Desktop\\Center\\Dev. Project\\Aulas - Nodejs\\next-saas-rbac\\apps\\api":
   version "1.0.0"
   resolved "file:apps/api"
+  dependencies:
+    "@saas/auth" "*"
 
-"@saas/auth@*", "@saas/auth@file:C:\\Users\\henrique.maximo\\Desktop\\Aulas - Nodejs\\next-saas-rbac\\packages\\auth":
+"@saas/auth@*", "@saas/auth@file:C:\\Users\\henrique.maximo\\Desktop\\Center\\Dev. Project\\Aulas - Nodejs\\next-saas-rbac\\packages\\auth":
   version "0.0.0"
   resolved "file:packages/auth"
   dependencies:
     "@casl/ability" "^6.7.1"
 
-"@saas/eslint-config@*", "@saas/eslint-config@file:C:\\Users\\henrique.maximo\\Desktop\\Aulas - Nodejs\\next-saas-rbac\\config\\eslint-config":
+"@saas/eslint-config@*", "@saas/eslint-config@file:C:\\Users\\henrique.maximo\\Desktop\\Center\\Dev. Project\\Aulas - Nodejs\\next-saas-rbac\\config\\eslint-config":
   version "0.0.0"
   resolved "file:config/eslint-config"
 
-"@saas/prettier-config@*", "@saas/prettier-config@file:C:\\Users\\henrique.maximo\\Desktop\\Aulas - Nodejs\\next-saas-rbac\\config\\prettier-config":
+"@saas/prettier-config@*", "@saas/prettier-config@file:C:\\Users\\henrique.maximo\\Desktop\\Center\\Dev. Project\\Aulas - Nodejs\\next-saas-rbac\\config\\prettier-config":
   version "0.0.0"
   resolved "file:config/prettier-config"
 
-"@saas/tsconfig@*", "@saas/tsconfig@file:C:\\Users\\henrique.maximo\\Desktop\\Aulas - Nodejs\\next-saas-rbac\\config\\typescript-config":
+"@saas/tsconfig@*", "@saas/tsconfig@file:C:\\Users\\henrique.maximo\\Desktop\\Center\\Dev. Project\\Aulas - Nodejs\\next-saas-rbac\\config\\typescript-config":
   version "0.0.0"
   resolved "file:config/typescript-config"
 
-"@types/eslint@>=8.0.0":
+"@types/eslint@^8.56.5", "@types/eslint@>=8.0.0":
   version "8.56.10"
   resolved "https://registry.npmjs.org/@types/eslint/-/eslint-8.56.10.tgz"
   integrity sha512-Shavhk87gCtY2fhXDctcfS3e6FdxWkCx1iUZ9eEUbh7rTqlZT0/IzOkCOVt0fCjcFuZ9FPYfuezTBImfHCDBGQ==
@@ -155,7 +157,7 @@
   resolved "https://registry.npmjs.org/@types/json5/-/json5-0.0.29.tgz"
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
 
-"@types/node@^20.14.11":
+"@types/node@^20", "@types/node@^20.11.24", "@types/node@^20.14.11":
   version "20.14.11"
   resolved "https://registry.npmjs.org/@types/node/-/node-20.14.11.tgz"
   integrity sha512-kprQpL8MMeszbz6ojB5/tU8PLN4kesnN8Gjzw349rDlNgsSzg90lAVj3llK99Dh7JON+t9AuscPPFW6mPbTnSA==
@@ -184,7 +186,7 @@
     semver "^7.5.4"
     ts-api-utils "^1.0.1"
 
-"@typescript-eslint/eslint-plugin@^7.16.1":
+"@typescript-eslint/eslint-plugin@^7.1.0", "@typescript-eslint/eslint-plugin@^7.16.1":
   version "7.16.1"
   resolved "https://registry.npmjs.org/@typescript-eslint/eslint-plugin/-/eslint-plugin-7.16.1.tgz"
   integrity sha512-SxdPak/5bO0EnGktV05+Hq8oatjAYVY3Zh2bye9pGZy6+jwyR3LG3YKkV4YatlsgqXP28BTeVm9pqwJM96vf2A==
@@ -210,15 +212,15 @@
     "@typescript-eslint/visitor-keys" "6.21.0"
     debug "^4.3.4"
 
-"@typescript-eslint/parser@^7.0.0":
-  version "6.21.0"
-  resolved "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-6.21.0.tgz"
-  integrity sha512-tbsV1jPne5CkFQCgPBcDOt30ItF7aJoZL997JSF7MhGQqOeT3svWRYxiqlfA5RUdlHN6Fi+EI9bxqbdyAUZjYQ==
+"@typescript-eslint/parser@^7.0.0", "@typescript-eslint/parser@^7.1.0":
+  version "7.16.1"
+  resolved "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-7.16.1.tgz"
+  integrity sha512-u+1Qx86jfGQ5i4JjK33/FnawZRpsLxRnKzGE6EABZ40KxVT/vWsiZFEBBHjFOljmmV3MBYOHEKi0Jm9hbAOClA==
   dependencies:
-    "@typescript-eslint/scope-manager" "6.21.0"
-    "@typescript-eslint/types" "6.21.0"
-    "@typescript-eslint/typescript-estree" "6.21.0"
-    "@typescript-eslint/visitor-keys" "6.21.0"
+    "@typescript-eslint/scope-manager" "7.16.1"
+    "@typescript-eslint/types" "7.16.1"
+    "@typescript-eslint/typescript-estree" "7.16.1"
+    "@typescript-eslint/visitor-keys" "7.16.1"
     debug "^4.3.4"
 
 "@typescript-eslint/scope-manager@6.21.0":
@@ -1077,7 +1079,7 @@ eslint-visitor-keys@^3.3.0, eslint-visitor-keys@^3.4.1, eslint-visitor-keys@^3.4
   resolved "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-3.4.3.tgz"
   integrity sha512-wpc+LXeiyiisxPlEkUzU6svyS1frIO3Mgxj1fdy7Pm8Ygzguax2N3Fa/D/ag1WqbOprdI+uY6wMUl8/a2G+iag==
 
-"eslint@^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8", "eslint@^3 || ^4 || ^5 || ^6 || ^7 || ^8", "eslint@^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0", "eslint@^6.0.0 || ^7.0.0 || >=8.0.0", "eslint@^7.0.0 || ^8.0.0", "eslint@^7.0.0 || ^8.0.0 || ^9.0.0", eslint@^8.0.1, eslint@^8.56.0, eslint@^8.57.0, eslint@>=5.0.0, eslint@>=6.0.0, eslint@>=7.0.0, eslint@>=8, eslint@>=8.0.0:
+"eslint@^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8", "eslint@^3 || ^4 || ^5 || ^6 || ^7 || ^8", "eslint@^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0", "eslint@^6.0.0 || ^7.0.0 || >=8.0.0", "eslint@^7.0.0 || ^8.0.0", "eslint@^7.0.0 || ^8.0.0 || ^9.0.0", eslint@^8, eslint@^8.0.1, eslint@^8.56.0, eslint@^8.57.0, eslint@>=5.0.0, eslint@>=6.0.0, eslint@>=7.0.0, eslint@>=8, eslint@>=8.0.0:
   version "8.57.0"
   resolved "https://registry.npmjs.org/eslint/-/eslint-8.57.0.tgz"
   integrity sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==
@@ -2359,7 +2361,7 @@ typed-array-length@^1.0.6:
     is-typed-array "^1.1.13"
     possible-typed-array-names "^1.0.0"
 
-typescript@>=4.2.0, typescript@>=5:
+typescript@^5, typescript@^5.3.3, typescript@>=4.2.0, typescript@>=5:
   version "5.5.3"
   resolved "https://registry.npmjs.org/typescript/-/typescript-5.5.3.tgz"
   integrity sha512-/hreyEujaB0w76zKo6717l3L0o/qEUtRgdvUBvlkhoWeOVMjMuHNHk0BRBzikzuGDqNmPQbg5ifMEqsHLiIUcQ==

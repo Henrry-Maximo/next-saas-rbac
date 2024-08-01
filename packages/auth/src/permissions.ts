@@ -10,11 +10,13 @@ type PermissionsByRole = (
   builder: AbilityBuilder<AppAbility>,
 ) => void
 
+// role -> valor do objeto | permissionsbyrole -> formato do valor
 export const permissions: Record<Role, PermissionsByRole> = {
   ADMIN: (_, { can }) => {
     can('manage', 'all')
   },
   MEMBER: (_, { can }) => {
     can('invite', 'User')
+    can('create', 'Project')
   },
 }
